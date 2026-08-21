@@ -2,7 +2,6 @@ import { Hero } from "@/components/sections/Hero";
 import { IdentifySection } from "@/components/sections/Identify";
 import { MethodSection } from "@/components/sections/Method";
 import { AboutSection } from "@/components/sections/About";
-import { TestimonialsSection } from "@/components/sections/Testimonials";
 import { JourneySection } from "@/components/sections/Journey";
 import { FaqSection } from "@/components/sections/Faq";
 import { ContactSection } from "@/components/sections/Contact";
@@ -31,7 +30,11 @@ export default function Page() {
         <IdentifySection />
         <MethodSection />
         <AboutSection />
-        <TestimonialsSection />
+        {/* Section 5 (Depoimentos) is deliberately OUT on this branch: the
+            client goes live before she has real testimonial videos and
+            reviews. Nothing was deleted — sections/Testimonials still lives in
+            the repo; putting it back is re-adding the import and the element
+            here (or simply deploying main). */}
         <JourneySection />
         <FaqSection />
         <ContactSection />

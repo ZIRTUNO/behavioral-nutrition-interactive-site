@@ -23,8 +23,9 @@ const LOCAL_ASSETS = [LOGO_SRC, `${BASE_PATH}/images/hero/vine-divider.webp`];
 
 /**
  * Below-the-fold heavies warmed AFTER the reveal, while the visitor reads the
- * Hero: the About spread and the testimonial polaroids (paths mirror
- * sections/About and sections/Testimonials). Loaded one at a time at low
+ * Hero: the About spread (paths mirror sections/About). The testimonial
+ * polaroids used to be warmed here too — this branch has no section 5 to show
+ * them, so those six files stay out of the boot. Loaded one at a time at low
  * priority so they never compete with anything interactive — by the time the
  * visitor scrolls down, they're already in cache instead of popping in late.
  */
@@ -32,12 +33,6 @@ const WARM_IMAGES = [
   `${BASE_PATH}/images/about/pond.webp`,
   `${BASE_PATH}/images/about/vines.webp`,
   `${BASE_PATH}/images/about/juliana.webp`,
-  `${BASE_PATH}/images/testimonials/mariana-1.webp`,
-  `${BASE_PATH}/images/testimonials/mariana-2.webp`,
-  `${BASE_PATH}/images/testimonials/mariana-3.webp`,
-  `${BASE_PATH}/images/testimonials/caue-1.webp`,
-  `${BASE_PATH}/images/testimonials/caue-2.webp`,
-  `${BASE_PATH}/images/testimonials/caue-3.webp`,
 ];
 
 const MIN_VISIBLE_MS = 600; // don't flash when assets are already cached

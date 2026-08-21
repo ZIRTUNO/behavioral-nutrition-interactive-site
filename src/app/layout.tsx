@@ -219,17 +219,10 @@ export default function RootLayout({
       className={`${fontSans.variable} ${fontSerif.variable} ${fontScript.variable} ${fontQuestion.variable}`}
     >
       <body>
-        {/* Warm the connections the YouTube embeds will need (React hoists
-            these into <head>). The testimonial loops + lightbox pull the
-            player from www.youtube-nocookie.com (privacy-enhanced embed —
-            mesma API postMessage, menos cookies) and its thumbnails/telemetry
-            from the others — preconnecting shaves the DNS+TLS round-trips off
-            the first player boot. The media streams themselves come from
-            per-session googlevideo hosts that can't be preconnected. */}
-        <link rel="preconnect" href="https://www.youtube-nocookie.com" />
-        <link rel="preconnect" href="https://i.ytimg.com" />
-        <link rel="preconnect" href="https://www.google.com" />
-        <link rel="dns-prefetch" href="https://static.doubleclick.net" />
+        {/* Os preconnects do YouTube (youtube-nocookie/ytimg/google) saíram
+            nesta branch: sem a seção 5 nenhum player é montado, e abrir
+            DNS+TLS para hosts que ninguém vai usar só disputa banda com o
+            download dos assets 3D no boot. Voltam junto com os depoimentos. */}
         {/* Start the heavy 3D downloads (GLB, HDRI, draco) with the HTML
             itself. The boot primer's fetch() calls only begin at hydration —
             after the main JS has downloaded and parsed — so on slow

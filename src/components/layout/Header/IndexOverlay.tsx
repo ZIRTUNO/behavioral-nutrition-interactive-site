@@ -53,17 +53,19 @@ function glideScrollTo(dest: number, duration: number, onArrive: () => void) {
   return stop;
 }
 
-/** All 8 site sections, in scroll order. The hash references match anchor
- *  ids that the section components will declare as they're added. */
+/** All 7 site sections, in scroll order. The hash references match anchor
+ *  ids that the section components will declare as they're added.
+ *  This branch ships without Depoimentos (see app/page.tsx), so the sumário
+ *  drops that entry and renumbers 05-07 — a numeral pointing at a section
+ *  that isn't on the page would scroll nowhere. */
 const SECTIONS = [
   { num: "01", label: "Início",              href: "#inicio" },
   { num: "02", label: "Você se identifica?", href: "#para-quem" },
   { num: "03", label: "Como funciona",       href: "#como-funciona" },
   { num: "04", label: "Sobre Juliana",       href: "#sobre" },
-  { num: "05", label: "Depoimentos",         href: "#depoimentos" },
-  { num: "06", label: "Atendimento",         href: "#atendimento" },
-  { num: "07", label: "Dúvidas",             href: "#duvidas" },
-  { num: "08", label: "Vamos conversar",     href: "#contato" },
+  { num: "05", label: "Atendimento",         href: "#atendimento" },
+  { num: "06", label: "Dúvidas",             href: "#duvidas" },
+  { num: "07", label: "Vamos conversar",     href: "#contato" },
 ] as const;
 
 interface Props {
