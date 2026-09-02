@@ -294,7 +294,7 @@ O modelo 3D tem 5 nós de cérebro (a "semente verde" na base é elemento de mar
 
 ```bash
 # 1. Clonar
-git clone https://github.com/JonathanDelmonte/behavioral-nutrition-interactive-site.git
+git clone https://github.com/ZIRTUNO/behavioral-nutrition-interactive-site.git
 cd behavioral-nutrition-interactive-site
 
 # 2. Instalar dependências
