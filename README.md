@@ -8,7 +8,7 @@
 
 *"O problema nunca foi a sua força de vontade."*
 
-[![Deploy no GitHub Pages](https://github.com/JonathanDelmonte/behavioral-nutrition-interactive-site/actions/workflows/deploy.yml/badge.svg)](https://github.com/JonathanDelmonte/behavioral-nutrition-interactive-site/actions/workflows/deploy.yml)
+[![Deploy no GitHub Pages](https://github.com/ZIRTUNO/behavioral-nutrition-interactive-site/actions/workflows/deploy.yml/badge.svg)](https://github.com/ZIRTUNO/behavioral-nutrition-interactive-site/actions/workflows/deploy.yml)
 ![Next.js 14](https://img.shields.io/badge/Next.js-14-000000?logo=nextdotjs&logoColor=white)
 ![React 18](https://img.shields.io/badge/React-18-087EA4?logo=react&logoColor=white)
 ![TypeScript 5](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
